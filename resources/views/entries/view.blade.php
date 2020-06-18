@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>{{ $entry->title }}</title>
 </head>
 <body>
-    <h1>Blog</h1>
-
-    <ul>
-    @foreach ($entries as)
-    <li></li>
-    </ul>
+    <h1>{{ $entry->title }}</h1>
+    <article>
+    {{ $entry->content }}
+    </article>
 </body>
 </html>

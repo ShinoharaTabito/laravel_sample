@@ -6,8 +6,12 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>記事一覧</h1>
+    <h1>Blog</h1>
 
-  <p>viewで生成</p>
+    <ul>
+    @foreach ($entries as $entry)
+    <li>{{ $entry->title }}</li>
+    @endforeach
+    </ul>
 </body>
 </html>
