@@ -41,3 +41,4 @@ Route::get('/{id}/', function($id) {
     return $id . 'のページです';
 });
 
+Route::get('/sum/{x}/{y}/', 'MathController@sum');
