@@ -10,7 +10,7 @@
 
     <ul>
     @foreach ($entries as $entry)
-    <li>{{ $entry->title }}</li>
+        <li><a href="{{ action("EntriesController@view", $entry->id) }}"> {{ $entry->title }}</li>
     @endforeach
     </ul>
 </body>

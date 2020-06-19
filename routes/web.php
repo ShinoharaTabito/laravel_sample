@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','EntriesController@index');
-Route::get('/{$id}', 'EntriesController@view')
+Route::get('/{$id}', 'EntriesController@view');

@@ -14,7 +14,7 @@ class EntriesController extends Controller
         return view('entries.index', ['entries'=>$entries]);
     }
     public function view($id) {
-        $entry = Entry::find($id)
+        $entry = Entry::find($id);
 
         return view('entries.view', ['entry'=>$entry]);
     }
