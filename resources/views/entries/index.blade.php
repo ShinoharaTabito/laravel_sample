@@ -9,8 +9,9 @@
     <h1>Blog</h1>
 
     <ul>
-    @foreach ($entries as $entry)
-        <li><a href="{{ action("EntriesController@view", $entry->id) }}"> {{ $entry->title }}</li>
+    @foreach ($portfolios as $portfolio)
+    <p>タイトル：<a href="/portfolio/{{$portfolio -> id}}">{{$portfolio -> title}}</a></P>
+    <p>-----------------------------------------------------------</P>
     @endforeach
     </ul>
 </body>
